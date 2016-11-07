@@ -1,10 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h2>Customers</h2>
+<h2>Alphabetized Customers</h2>
 
 <%= link_to 'New Customer', new_customer_path %>
 <%= link_to 'missing_email', missing_email_path %>
-<%= link_to 'alphabetized', alphabetized_path %>
 
     <% @customers.each do |customer| %>
     <%= render customer %>

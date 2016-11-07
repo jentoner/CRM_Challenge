@@ -1,11 +1,12 @@
 <div class="customer">
- <h2><%= customer.title %></h2>
- <p><%= image_tag product.image_filename %></p>
- <p><%= product.description %></p>
- <p>Price: <%= number_to_currency product.price %></p>
+ <h2><%= customer.fullname %></h2>
+  <h1><%= customer.notes %></h1>
+ <p><%= image_tag customer.image %></p>
+ <p><%= customer.phonenumber %></p>
+ <p>Email: <%= customer.email %></p>
  <p>
-   <%= link_to 'Show', product %> -
-   <%= link_to 'Edit', edit_product_path(product) %> -
-   <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
+   <%= link_to 'Show', customer %> -
+   <%= link_to 'Edit', edit_customer_path(customer) %> -
+   <%= link_to 'Destroy', customer, method: :delete, data: { confirm: 'Are you sure?' } %>
  </p>
 </div>
